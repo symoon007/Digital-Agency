@@ -1,9 +1,9 @@
 /* set primary colors */
 :root {
-    --primary-color: #1e0fa0;
-    --wh-color: #F4F8F5;
-    --bg-primary: #080820;
-    --secondary-color: #f02480;
+  --primary-color: #1e0fa0;
+  --wh-color: #f4f8f5;
+  --bg-primary: #080820;
+  --secondary-color: #f02480;
 }
 * {
   margin: 0;
@@ -11,62 +11,68 @@
   box-sizing: border-box;
 }
 .btn-primary {
-    padding:15px 35px;
-    border: 0;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    color: var(--wh-color);
+  padding: 15px 35px;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--wh-color);
 }
 .btn-secondary {
-    padding:15px 35px;
-    border: 0;
-    border-radius: 5px;
-    background-color: var(--secondary-color);
-    color: var(--wh-color);
+  padding: 15px 35px;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--wh-color);
 }
 /* header styles */
 header {
-    background-blend-mode: overlay;
-    background-image: url(../asset/image/background.jpg);
-    height: 100vh;
+  background-blend-mode: overlay;
+  background-image: url(../asset/image/background.jpg);
+  height: 100vh;
 }
 
 nav {
   background-color: var(--bg-primary);
-    opacity: .8;
+  opacity: 0.8;
   display: flex;
   padding: 10px 50px;
   justify-content: space-between;
   align-items: center;
-  
 }
 nav h3 {
-    color: white;
+  color: white;
 }
 ul {
   display: flex;
   list-style: none;
   font-size: 1.3rem;
 }
- .navbar ul li {
-    margin-right: 30px;
-    color: var(--wh-color);
- }
+.navbar ul li {
+  margin-right: 30px;
+  color: var(--wh-color);
+}
 .head-container {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding:150px 0 0 0;
-    
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 0 0;
 }
 .head-content {
-    
 }
 .head-content h1 {
-    font-size:4rem;
-    font-weight: 800;
-    color: var(--bg-primary);
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--bg-primary);
 }
 .head-content h1 span {
-    color: var(--secondary-color)
+  color: var(--secondary-color);
+}
+.head-content p {
+  font-size: 1.2rem;
+  color: var(--bg-primary);
+  margin: 30px 0;
+  line-height: 1.5rem;
+}
+.head-content button {
+  margin: 0 5px;
 }
