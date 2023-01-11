@@ -17,6 +17,9 @@
   background-color: var(--primary-color);
   color: var(--wh-color);
 }
+.btn-primary:focus {
+  background-color: #5568F2;
+}
 .btn-secondary {
   padding: 15px 35px;
   border: 0;
@@ -24,11 +27,16 @@
   background-color: var(--secondary-color);
   color: var(--wh-color);
 }
+.btn-secondary:focus {
+  background-color: #E06CCF;
+}
 /* header styles */
 header {
   background-blend-mode: overlay;
-  background-image: url(../asset/image/background.jpg);
+  background-image: url(../asset/image/background.jpg), linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .5));
+  background-blend-mode: overlay;
   height: 100vh;
+  margin-bottom: 120px;
 }
 
 nav {
@@ -47,9 +55,15 @@ ul {
   list-style: none;
   font-size: 1.3rem;
 }
-.navbar ul li {
+
+
+.navbar ul li a {
   margin-right: 30px;
   color: var(--wh-color);
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  text-decoration: underline;
 }
 .head-container {
   text-align: center;
@@ -62,17 +76,68 @@ ul {
 .head-content h1 {
   font-size: 4rem;
   font-weight: 800;
-  color: var(--bg-primary);
+  color: var(--wh-color);
 }
 .head-content h1 span {
   color: var(--secondary-color);
 }
 .head-content p {
   font-size: 1.2rem;
-  color: var(--bg-primary);
+  color: var(--wh-color);
   margin: 30px 0;
   line-height: 1.5rem;
 }
 .head-content button {
   margin: 0 5px;
+}
+/* main styles */
+/* service section styles */
+.services {
+  background-image: url('../asset/image/footer-bg.png'), linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
+  background-blend-mode: overlay;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding: 0 0 20px 0;
+}
+.author-details, .service-content {
+  width:50%;
+  
+}
+.author-details {
+  display: flex;
+  margin: 0 auto;
+  justify-content:center;
+  align-items:center;
+  padding: 20px;
+}
+.author-content {}h2 span {
+  color: var(--secondary-color);
+}
+.author-details .section-title {
+  font-size: 2.5rem;
+}
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  height: 80vh;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.contents {
+   background-color: var(--wh-color);
+   height: 300px;
+   width: 320px;
+   padding: 80px;
+   text-align: center;
+  
+   border-radius: 5px;
+ 
+}
+.contents img {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+ 
 }
